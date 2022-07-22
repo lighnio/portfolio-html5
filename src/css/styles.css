@@ -18,9 +18,25 @@ body{
     width: 70%;
     height: auto;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
     padding: 20px;
     margin: 50px auto
+}
+
+.portfolio{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main{
+    background: red;
+    width: 30%;
+}
+
+.history{
+    background: blue;
+    width: 65%;
 }
