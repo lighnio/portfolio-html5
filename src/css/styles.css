@@ -31,15 +31,46 @@ body{
     justify-content: space-between;
 }
 
-.main{
-    background: rgba( 255, 255, 255, 0.15 );
+.presentation{
+    background: rgba( 255, 255, 255, 0.01 );
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    width: 30%;
+    transition: all .3s ease;
+}
+
+.presentation:hover{
+    cursor: pointer;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 8.5px );
     -webkit-backdrop-filter: blur( 8.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
-    width: 30%;
+.presentation .person-info{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 10px;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.presentation .person-info .avatar{
+    width: 60%;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+.presentation .person-info .name{
+    color: white;
+}
+
+.presentation .person-info .titles{
+    color: rgb(65, 65, 65)
 }
 
 .history{
