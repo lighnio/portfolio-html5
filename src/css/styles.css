@@ -50,7 +50,8 @@ body{
 }
 
 .presentation .person-info{
-    width: 95%;
+    width: 20vw;
+    min-width: 300px;
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -71,6 +72,12 @@ body{
 
 .presentation .person-info .titles{
     color: rgb(65, 65, 65)
+}
+
+.presentation .data {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 .history{
