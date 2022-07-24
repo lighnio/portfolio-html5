@@ -8,6 +8,25 @@ body{
     background: linear-gradient(to left, #71C5EE, #025091);
 }
 
+.separator{
+    width: 90%;
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 200px;
+}
+
+.glass{
+    background: rgba( 255, 255, 255, 0.01 );
+}
+
+.glass:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
 .container{
     background: rgba( 213, 190, 190, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -32,23 +51,12 @@ body{
 }
 
 .presentation{
-    background: rgba( 255, 255, 255, 0.01 );
     display: flex;
     margin: 10px 0;
     justify-content: center;
     width: 30%;
     transition: all .3s ease;
 }
-
-.presentation:hover{
-    cursor: pointer;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 8.5px );
-    -webkit-backdrop-filter: blur( 8.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
 .presentation .person-info{
     width: 20vw;
     min-width: 300px;
@@ -74,10 +82,18 @@ body{
     color: rgb(65, 65, 65)
 }
 
-.presentation .data {
+.portfolio-link{
+    margin: 20px 0;
+}
+
+.presentation .data{
     display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap !important;
+}
+
+.data h3{
+    color: rgb(225, 225, 225);
+    padding: 20px;
 }
 
 .history{
